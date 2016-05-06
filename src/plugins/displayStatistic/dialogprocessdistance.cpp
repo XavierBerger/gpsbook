@@ -123,7 +123,7 @@ namespace PluginDisplayStatistic {
                     waypointBegin = waypointEnd;
                     waypointEnd = waypoint;
                     double delta =  calculateDistance(waypointBegin->lon, waypointBegin->lat, waypointEnd->lon, waypointEnd->lat);
-                    if ( isnan(delta) )
+                    if ( std::isnan(delta) )
                         delta=0;
                     totalDistance += delta;
                     //qDebug() << iloop <<" - Distance: " << d << " - Total: "<< totalDistance << "km";

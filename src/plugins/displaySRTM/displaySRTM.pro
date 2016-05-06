@@ -73,7 +73,7 @@ win32 {
 
 unix {
     LIBS += -lcurl
-    LIBS += -lquazip
+    LIBS += -lquazip5
 }
 
 OTHER_FILES += \

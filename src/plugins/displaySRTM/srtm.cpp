@@ -15,6 +15,7 @@
 #include <QProcess>
 #include <QDebug>
 #include <qendian.h>
+#include <QDataStream>
 
 /** Standard error tile that is returned when something goes wrong. */
 SrtmTile errorTile("error", -1000, -1000); //TODO

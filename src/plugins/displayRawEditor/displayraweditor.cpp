@@ -21,8 +21,13 @@
 ****************************************************************************/
 #include <QtGui>
 #include <QObject>
+#if ( QT_VERSION >= QT_VERSION_CHECK(5, 0, 0) )
+#include <QtWidgets/QMessageBox>
+#include <QtWidgets/QWidget>
+#else
 #include <QMessageBox>
 #include <QWidget>
+#endif
 #include <QDebug>
 #include <QSettings>
 #include "pixmap.h"

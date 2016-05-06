@@ -22,7 +22,11 @@
 #ifndef DISPLAYRAWEDITORFRAME_H
 #define DISPLAYRAWEDITORFRAME_H
 
+#if ( QT_VERSION >= QT_VERSION_CHECK(5, 0, 0) )
+#include <QtWidgets/QFrame>
+#else
 #include <QFrame>
+#endif
 #include <Qsci/qsciscintilla.h>
 #include <Qsci/qscilexerxml.h>
 #include "gpsdata.h"

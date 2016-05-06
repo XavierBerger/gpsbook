@@ -12,7 +12,6 @@ CONFIG += release
 DESTDIR = ../../../delivery/plugins
 TEMPLATE = lib
 INCLUDEPATH += ../../GPSBook
-INCLUDEPATH += ./QScintilla/Qt4/
 DEFINES += DISPLAYRAWEDITOR_LIBRARY
 SOURCES += displayraweditor.cpp \
     displayraweditoroptionsframe.cpp \
@@ -34,6 +33,8 @@ TRANSLATIONS = displayRawEditor_fr_fr.ts
 
 linux-g++ {
     # libqscintilla2 libraries
+    INCLUDEPATH += /usr/include/x86_64-linux-gnu/qt5/
+    #INCLUDEPATH += /usr/include/x86_64-linux-gnu/qt5/QtWidgets/
     LIBS += -L../../../delivery/lib -lqscintilla2
 }
 mac {
